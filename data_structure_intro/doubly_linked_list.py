@@ -58,6 +58,17 @@ class MyDoublyLinkedList:
                 ptr.prev.next = element
             ptr.prev = element
 
+    def delete(self, element):
+        # if element is the first one
+        if element.prev == None:
+            self.head = element.next
+        else:
+            element.prev.next = element.next
+        if element.next == None:
+            self.tail = element.prev
+        else:
+            element.next.prev = element.prev
+
 
     def to_string(self):
         stringfied_data = "[ "
