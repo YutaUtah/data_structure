@@ -95,3 +95,9 @@ if __name__ == "__main__":
     print("初期値: ", my_list.to_string())
     print("my_list[2] = ", my_list.get(2).val)
 
+#todo
+# https://leetcode.com/problems/linked-list-cycle/
+# https://leetcode.com/problems/valid-parentheses/
+# reverse linkedlist
+
+# https://leetcode.com/problems/design-linked-list/
