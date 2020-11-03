@@ -18,7 +18,7 @@
 
 def insertion(arr, n):
     for i in range(1, n):
-        val = arr[i]
+        val = arr[i] # temporary value to sort 
 
         j = i - 1
         while j >= 0 and arr[j] > val:
