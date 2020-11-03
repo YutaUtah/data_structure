@@ -25,3 +25,11 @@ def bubble(arr, n):
 arr = [5,9,2,1,7,3,4,6,8,0]
 bubble(arr, len(arr))
 print(arr)
+
+
+# another one
+def sort(nums):
+    for i in range(len(nums)-1,0,-1): # outer loop is to check the number of elements we have
+        for j in range(i): # internal loop is for swapping the numbers
+            if nums[j]>nums[j+1]:
+                nums[j], nums[j] = nums[j], nums[j]
