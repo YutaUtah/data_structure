@@ -24,3 +24,36 @@ if __name__ == "__main__":
     print(A)
     quicksort(A, 0, len(A)-1)
     print(A)
+
+
+# def partition(numbers, low, high):
+#     i = low - 1
+#     pivot = numbers[high]
+#     for j in range(low, high):
+#         if numbers[j] <= pivot:
+#             i += 1
+#             numbers[i], numbers[j] = numbers[j], numbers[i]
+#     numbers[i+1], numbers[high] = numbers[high], numbers[i+1]
+#
+#     # return the index number of the pivot
+#     return i+1
+#
+#
+# def quick_sort(numbers):
+#     def _quick_sort(numbers, low, high):
+#         if low < high:
+#             partition_index = partition(numbers, low, high)
+#             _quick_sort(numbers, low, partition_index-1)
+#             _quick_sort(numbers, partition_index+1, high)
+#
+#     _quick_sort(numbers, 0, len(numbers)-1)
+#     return numbers
+#
+#     # partition(numbers, low, high)
+#
+#
+#
+#
+# if __name__ == '__main__':
+#     nums = [1,8,3,9,4,5,7]
+#     print(quick_sort(nums))
